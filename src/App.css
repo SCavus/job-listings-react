@@ -1,0 +1,129 @@
+.App {
+  text-align: center;
+}
+
+body {
+  margin-left: 10%;
+  margin-right: 10%;
+  max-width: 1440px;
+  font-family: "Spartan", sans-serif;
+  background-color: hsl(180, 52%, 96%);
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  background-image: url('./bg-header-desktop.svg');
+  background-color: hsl(180, 29%, 50%);
+}
+
+.all-jobs-container {
+align-content: center;
+}
+
+.job-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 2px solid white;
+  border-radius: 10px;
+  box-shadow: 2px 10px hsl(180, 37%, 82%);
+  background-color: white;
+  width: 80%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 10%;
+}
+
+.job-listing {
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: white;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.company-logo {
+  align-self: center;
+}
+
+.job-details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.job-details-company,
+.job-details-misc {
+  display: flex;
+  flex-direction: row;
+}
+
+.label-new {
+  margin-left: 10px;
+  font-size: 15px;
+  background-color: hsl(180, 29%, 50%);
+  border-radius: 15px;
+  color: aliceblue;
+  padding: 8px 8px;
+  line-height: 15px;
+  height: 15px;
+}
+
+.label-featured {
+  margin-left: 10px;
+  font-size: 15px;
+  background-color: black;
+  border-radius: 15px;
+  color: aliceblue;
+  padding: 8px 8px;
+  line-height: 15px;
+  height: 15px;
+}
+
+.job-company-name {
+  margin: 0;
+  height: 17px;
+  font-size: 15px;
+  color: hsl(180, 29%, 50%);
+  font-weight: bolder;
+  padding: 8px 0;
+}
+
+.job-details-position {
+  color: hsl(180, 29%, 50%);
+  text-align: left;
+  font-size: 16px;
+}
+.job-details-position h2 {
+  margin: 5px 0px;
+}
+
+.job-details-misc div {
+  padding-right: 15px;
+  color: hsl(180, 8%, 52%);
+}
+
+.languages {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  margin-right: 15px;
+  width: 500px;
+  justify-content: flex-end;
+}
+
+.lang {
+  padding: 5px;
+  margin-left: 10px;
+  font-size: 20px;
+  background-color: hsl(180, 52%, 96%);
+  color: hsl(180, 29%, 50%);
+  font-weight: bolder;
+  border: 1px solid white;
+  border-radius: 2px;
+
+}
