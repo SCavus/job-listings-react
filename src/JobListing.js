@@ -1,6 +1,7 @@
 import React from "react";
 
 const JobListing = (props) => {
+
   return (
     <div className="job-container">
       <div className="job-listing">
@@ -28,11 +29,14 @@ const JobListing = (props) => {
         </div>
       </div>
       <div className="languages">
-        {props.jobListing.languages.map((lang) => {
-          return <div className='lang'>{lang}</div>;
+      <div onClick={()=>props.addLanguage(props.jobListing.role)} className='lang' style={{cursor:'pointer'}}>{props.jobListing.role}</div>
+      <div onClick={()=>props.addLanguage(props.jobListing.level)} className='lang' style={{cursor:'pointer'}}>{props.jobListing.level}</div>
+        {props.jobListing.languages.map((lang, index) => {
+          return <div key={index} onClick={(e) => props.addLanguage(lang)} className='lang' style={{cursor:'pointer'}}>{lang}</div>;
         })}
       </div>
     </div>
   );
 };
+
 export default JobListing;

@@ -35,6 +35,12 @@ align-content: center;
   margin-left: 10%;
 }
 
+.job-container:hover {
+  box-shadow: 0 4px 8px 0 #92A8D1, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-left-style: solid;
+  border-left-color: #466194;
+}
+
 .job-listing {
   border: 2px solid white;
   border-radius: 10px;
@@ -98,6 +104,7 @@ align-content: center;
   text-align: left;
   font-size: 16px;
 }
+
 .job-details-position h2 {
   margin: 5px 0px;
 }
@@ -125,5 +132,32 @@ align-content: center;
   font-weight: bolder;
   border: 1px solid white;
   border-radius: 2px;
+}
 
+.current-filter {
+  height: 40px;
+  padding-top: 20px;
+    width: 80%;
+    background-color: burlywood;
+    height: 40px;
+    padding-top: 20px;
+    transform: translateY(-50%);
+    background-color: white;
+    margin: auto;
+}
+
+.filtered-tag {
+  padding: 5px;
+  margin-left: 10px;
+  font-size: 20px;
+  background-color: hsl(180, 52%, 96%);
+  color: hsl(180, 29%, 50%);
+  font-weight: bolder;
+  border: 1px solid white;
+  border-radius: 2px;
+}
+.delete-tag {
+  border: 2px solid black;
+  color:black;
+  transform: translateY(-10%);
 }
