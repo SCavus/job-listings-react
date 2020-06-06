@@ -135,19 +135,22 @@ align-content: center;
 }
 
 .current-filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   height: 40px;
   padding-top: 20px;
-    width: 80%;
-    background-color: burlywood;
-    height: 40px;
-    padding-top: 20px;
-    transform: translateY(-50%);
-    background-color: white;
-    margin: auto;
+  width: 80%;
+  background-color: burlywood;
+  height: 40px;
+  padding-top: 20px;
+  transform: translateY(-50%);
+  background-color: white;
+  margin: auto;
 }
 
 .filtered-tag {
-  padding: 5px;
+  padding: 0 5px;
   margin-left: 10px;
   font-size: 20px;
   background-color: hsl(180, 52%, 96%);
@@ -156,8 +159,14 @@ align-content: center;
   border: 1px solid white;
   border-radius: 2px;
 }
+
 .delete-tag {
-  border: 2px solid black;
-  color:black;
+  width: 15px;
+  color: white;
+  background-color: hsl(180, 29%, 50%);
   transform: translateY(-10%);
+}
+
+.clear-button {
+  margin-right: 15px;
 }

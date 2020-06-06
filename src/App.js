@@ -24,10 +24,14 @@ function App() {
     setJobFilter(jobFilter.filter(item=>item !== el))
   }
 
+  const clearAllTags = () => {
+    setJobFilter([])
+  }
+
   return (
     <div className='App'>
       <header className="header"></header>
-      <CurrentFilter jobFilter={jobFilter} removeTag={removeTag}/>
+      <CurrentFilter jobFilter={jobFilter} removeTag={removeTag} clearAll={clearAllTags}/>
       <AllJobsListing jobFilter={filteredJobs()} addLanguage={addLanguage} />  
     </div>
   )
