@@ -4,7 +4,7 @@ const CurrentFilter = (props) => {
   return (
     <div className={props.jobFilter.length > 0 ? 'current-filter' : null}>
       {props.jobFilter.map((data, index) => (
-        <span className='filtered-tag' onClick={()=>props.removeTag(data)} key={index} style={{cursor:'pointer'}}>{data} <span className='delete-tag'>X</span></span>
+        <span className='filtered-tag' key={index} style={{cursor:'pointer'}}>{data} <span  onClick={()=>props.removeTag(data)} className='delete-tag'>X</span></span>
       ))}
     </div>
   );
